@@ -1,6 +1,6 @@
 ﻿namespace ProyectodeAula2021
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -72,7 +72,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(88, 194);
+            this.button1.Location = new System.Drawing.Point(115, 189);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 43);
             this.button1.TabIndex = 4;
