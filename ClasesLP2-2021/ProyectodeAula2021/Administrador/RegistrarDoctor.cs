@@ -16,5 +16,6 @@ namespace ProyectodeAula2021.Administrador
         {
             InitializeComponent();
         }
+
     }
 }

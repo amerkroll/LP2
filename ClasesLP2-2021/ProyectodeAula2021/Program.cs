@@ -17,6 +17,15 @@ namespace ProyectodeAula2021
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
+
+            Console.WriteLine("Hola Mundo");
+
+            // Call the constructor that has one parameter.
+            var person2 = new Persona();
+
+            Console.WriteLine(person2.Nombre);   
+            Console.WriteLine(person2.Apellido);
+            Console.WriteLine(person2);
         }
     }
 }

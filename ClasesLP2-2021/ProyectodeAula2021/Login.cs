@@ -26,5 +26,10 @@ namespace ProyectodeAula2021
         {
             MessageBox.Show("Esto fue nuestra primera prueba.");
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
