@@ -9,6 +9,36 @@ namespace ProyectodeAula2021.Clases
 {
     public class Lista
     {
+        String nombre;
+        String apellido;
+        int matricula;
+        String carrera;
+
+     
+       // recorre_interativo();
+       //  crea_inicio();
+
+        public void setAtributos(string nombre, string apellido, int matricula, string carrera)
+        {
+            this.nombre = nombre;
+            //this utilizamos para hacer referencia a el atributo nombre de esta clase Lista.
+            this.apellido = apellido;
+            this.matricula = matricula;
+            this.carrera = carrera;
+        }
+
+        public String getNombre()
+        {
+            return this.nombre;
+        }
+
+        public String getApellido()
+        {
+            return this.apellido;
+        }
+
+        //string perro { get; set; }
+
 
         static void ImprimirLista()
         {
@@ -19,7 +49,7 @@ namespace ProyectodeAula2021.Clases
             listaAlumnos.Add("Meli");
             listaAlumnos.Add("Edgar");
             listaAlumnos.Add(profe);
-
+           
             Console.WriteLine(listaAlumnos[1]);
             int contador = 0; 
             foreach (string alumno in listaAlumnos)   // para cada elemento
@@ -28,9 +58,11 @@ namespace ProyectodeAula2021.Clases
             {
                 //Console.WriteLine(alumno);
                 Console.WriteLine("Elemento #{"+contador+"}--> "+alumno);
+
+                Console.WriteLine("Cantidad de elementos en la lista = " + listaAlumnos.Count().ToString());
+
                 contador++;
             }
-
         }
     }
 }

@@ -19,7 +19,7 @@ namespace ProyectodeAula2021
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
 
-            Console.WriteLine("Hola Mundo");
+            //Console.WriteLine("Hola Mundo");
 
             // Call the constructor that has one parameter.
             //var person2 = new Persona();
@@ -27,8 +27,16 @@ namespace ProyectodeAula2021
             //Console.WriteLine(person2.Nombre);   
             //Console.WriteLine(person2.Apellido);
             //Console.WriteLine(person2);
+            
+
+            Lista objetoLista = new Lista();
+
+            objetoLista.setAtributos("Mauro", "Gimenez", 8798, "INF");
+
+            Console.WriteLine("El primer alumno de la clase es: "+objetoLista.getNombre());
+            Console.WriteLine("Los demas atributos del objeto Mauro son: " + objetoLista.getApellido());
+
             ImprimirLista();
-           
         }
 
 
@@ -53,6 +61,8 @@ namespace ProyectodeAula2021
                 Console.WriteLine("Elemento #{" + contador.ToString() + "}--> " + alumno);
                 contador++;
             }
+
+            Console.WriteLine("Cantidad de elementos en la lista =" + listaAlumnos.Count().ToString());
 
         }
     }
