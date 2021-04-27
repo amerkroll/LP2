@@ -9,23 +9,29 @@ namespace ProyectodeAula2021.Clases
 {
     public class Lista
     {
-        String nombre;
+        String nombre ;
         String apellido;
-        int matricula;
+        public int matricula {get; set;}
         String carrera;
 
-     
+        public String Carrera
+        {
+            set  {this.carrera = value; }
+            get { return this.carrera; }
+        }
+
        // recorre_interativo();
        //  crea_inicio();
 
-        public void setAtributos(string nombre, string apellido, int matricula, string carrera)
+        public void setAtributos(string nombre, string apellido)
         {
             this.nombre = nombre;
             //this utilizamos para hacer referencia a el atributo nombre de esta clase Lista.
             this.apellido = apellido;
-            this.matricula = matricula;
-            this.carrera = carrera;
         }
+
+        public void MetodoVacio()
+        { }
 
         public String getNombre()
         {

@@ -31,12 +31,18 @@ namespace ProyectodeAula2021
 
             Lista objetoLista = new Lista();
 
-            objetoLista.setAtributos("Mauro", "Gimenez", 8798, "INF");
+            objetoLista.setAtributos("Mauro", "Gimenez");
 
             Console.WriteLine("El primer alumno de la clase es: "+objetoLista.getNombre());
             Console.WriteLine("Los demas atributos del objeto Mauro son: " + objetoLista.getApellido());
 
-            ImprimirLista();
+            objetoLista.Carrera = "Informatica"; //uso del set
+            Console.WriteLine("La carrera de Mauro es: "+objetoLista.Carrera); //uso del get
+
+            objetoLista.matricula = 4324; //uso del set
+            Console.WriteLine("La matricula de Mauro es: " + objetoLista.matricula); //uso del get
+
+            //ImprimirLista();
         }
 
 
