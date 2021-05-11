@@ -53,6 +53,7 @@
     <Compile Include="Clases\ArbolBinarioOrdenado.cs" />
     <Compile Include="Clases\Cola.cs" />
     <Compile Include="Clases\Lista.cs" />
+    <Compile Include="Clases\Nodo_Arbol.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
