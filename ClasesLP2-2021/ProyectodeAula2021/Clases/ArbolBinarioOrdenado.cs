@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProyectodeAula2021.Clases
 {
-    class ArbolBinarioOrdenado
+    class ArbolBinarioOrdenado //Arbol binario de busqueda --> binary search tree
     {
         class Nodo
         {
             public int info;
-            public Nodo izq, der;
+            public Nodo izq;
+            public Nodo der;
         }
         Nodo raiz;
 
@@ -52,21 +53,56 @@ namespace ProyectodeAula2021.Clases
             }
         }
 
+        public void Busqueda_ABB_Mobin(Nodo reco , int info)
+        {
+        }
+
+        public void Busqueda_ABB_Augusto(Nodo reco, int info)
+        {
+        }
+
+        public void Busqueda_ABB_Meli(Nodo reco, int info)
+        {
+        }
+
+        public void Busqueda_ABB_Julia(Nodo reco, int info)
+        {
+        }
+
+        public void Busqueda_ABB_Marcos(Nodo reco, int info)
+        {
+        }
+
+        public void Busqueda_ABB_Edgar(Nodo reco, int info)
+        {
+        }
+
+        public void Busqueda_ABB_Mauro(Nodo reco, int info)
+        {
+        }
+
+        public void Busqueda_ABB_Nelson(Nodo reco, int info)
+        {
+        }
         /*
         El método ImprimirPre(), es decir el no recursivo se encarga de llamar al método recursivo pasando la dirección del nodo raiz.
         El método recursivo void ImprimirPre (Nodo reco) lo primero que verifica con un if si reco está apuntando a un nodo (esto es verdad si reco es distinto a null), en caso afirmativo ingresa al bloque del if y realiza:
 
-     - Visitar la raiz.
-     - Recorrer el subárbol izquierdo en pre-orden.
-     - Recorrer el subárbol derecho en pre-orden.
+        - Visitar la raiz --> imprimo el valor del nodo.
+        - Recorrer el subárbol izquierdo en pre-orden (recursivo)
+        - Recorrer el subárbol derecho en pre-orden (recursivo)
+         
         La visita en este caso es la impresión de la información del nodo y los recorridos son las llamadas recursivas pasando las direcciones de los subárboles izquierdo y derecho.
          */
-        private void ImprimirPre (Nodo reco)
+        private void ImprimirPre (Nodo reco) //RECORRIDO
         {
             if (reco != null)
             {
-                Console.Write(reco.info + " ");
-                ImprimirPre (reco.izq);
+               Console.Write(reco.info + " "); //--> muestro el valor en consola
+               if (reco.info == 1000) // INFOR = 1000
+                   Console.Write("Encontre el nodo buscado");
+                
+                ImprimirPre (reco.izq);  //--> le llamo recursivamente imprimirPre(reco.izq)
                 ImprimirPre (reco.der);
             }
         }
@@ -77,7 +113,7 @@ namespace ProyectodeAula2021.Clases
             Console.WriteLine();
         }
 
-        //Los algoritmos de los recorridos en entreorden y postorden son similares. La diferencia es que la visita la realizamos entre las llamadas recursivas en el recorrido en entre orden:
+        //Los algoritmos de los recorridos en entreorden-inorden y postorden son similares. La diferencia es que la visita la realizamos entre las llamadas recursivas en el recorrido en entre orden:
         private void ImprimirEntre (Nodo reco)
         {
             if (reco != null)

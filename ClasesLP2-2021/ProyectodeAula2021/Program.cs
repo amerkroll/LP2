@@ -30,7 +30,7 @@ namespace ProyectodeAula2021
 
 
             Lista objetoLista = new Lista();
-
+            /*
             objetoLista.setAtributos("Mauro", "Gimenez");
 
             Console.WriteLine("El primer alumno de la clase es: " + objetoLista.getNombre());
@@ -41,7 +41,7 @@ namespace ProyectodeAula2021
 
             objetoLista.matricula = 4324; //uso del set
             Console.WriteLine("La matricula de Mauro es: " + objetoLista.matricula); //uso del get
-
+            */
             //ImprimirLista();
             ImprimirABB();
         }
@@ -75,11 +75,12 @@ namespace ProyectodeAula2021
         static void ImprimirABB()
         {
             ArbolBinarioOrdenado abo = new ArbolBinarioOrdenado ();
-            abo.Insertar (100);
-            abo.Insertar (50);
-            abo.Insertar (25);
-            abo.Insertar (75);
-            abo.Insertar (150);
+            abo.Insertar (120);
+            abo.Insertar (87);
+            abo.Insertar (140);
+            abo.Insertar (43);
+            abo.Insertar (99);
+            abo.Insertar (1000);
             Console.WriteLine ("Impresion preorden: ");
             abo.ImprimirPre ();
             Console.WriteLine ("Impresion entreorden: ");
