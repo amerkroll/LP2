@@ -27,24 +27,24 @@ namespace ProyectodeAula2021
             //Console.WriteLine(person2.Nombre);   
             //Console.WriteLine(person2.Apellido);
             //Console.WriteLine(person2);
-            
+
 
             Lista objetoLista = new Lista();
 
             objetoLista.setAtributos("Mauro", "Gimenez");
 
-            Console.WriteLine("El primer alumno de la clase es: "+objetoLista.getNombre());
+            Console.WriteLine("El primer alumno de la clase es: " + objetoLista.getNombre());
             Console.WriteLine("Los demas atributos del objeto Mauro son: " + objetoLista.getApellido());
 
             objetoLista.Carrera = "Informatica"; //uso del set
-            Console.WriteLine("La carrera de Mauro es: "+objetoLista.Carrera); //uso del get
+            Console.WriteLine("La carrera de Mauro es: " + objetoLista.Carrera); //uso del get
 
             objetoLista.matricula = 4324; //uso del set
             Console.WriteLine("La matricula de Mauro es: " + objetoLista.matricula); //uso del get
 
             //ImprimirLista();
+            ImprimirABB();
         }
-
 
         static void ImprimirLista()
         {
@@ -56,7 +56,7 @@ namespace ProyectodeAula2021
             listaAlumnos.Add("Edgar");
             listaAlumnos.Add(profe);
 
-            Console.WriteLine(listaAlumnos[1]);
+            //Console.WriteLine(listaAlumnos[1]);
 
             int contador = 0;
             foreach (string alumno in listaAlumnos)   // para cada elemento
@@ -70,6 +70,22 @@ namespace ProyectodeAula2021
 
             Console.WriteLine("Cantidad de elementos en la lista =" + listaAlumnos.Count().ToString());
 
+        }
+
+        static void ImprimirABB()
+        {
+            ArbolBinarioOrdenado abo = new ArbolBinarioOrdenado ();
+            abo.Insertar (100);
+            abo.Insertar (50);
+            abo.Insertar (25);
+            abo.Insertar (75);
+            abo.Insertar (150);
+            Console.WriteLine ("Impresion preorden: ");
+            abo.ImprimirPre ();
+            Console.WriteLine ("Impresion entreorden: ");
+            abo.ImprimirEntre ();
+            Console.WriteLine ("Impresion postorden: ");
+            abo.ImprimirPost ();
         }
     }
 }

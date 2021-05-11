@@ -50,6 +50,7 @@
     <Compile Include="Administrador\RegistrarDoctor.Designer.cs">
       <DependentUpon>RegistrarDoctor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\ArbolBinarioOrdenado.cs" />
     <Compile Include="Clases\Cola.cs" />
     <Compile Include="Clases\Lista.cs" />
     <Compile Include="Login.cs">
