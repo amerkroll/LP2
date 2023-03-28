@@ -39,9 +39,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(82, 90);
+            this.label1.Location = new System.Drawing.Point(123, 138);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -49,57 +50,63 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(85, 128);
+            this.label2.Location = new System.Drawing.Point(128, 197);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(152, 82);
+            this.textBox1.Location = new System.Drawing.Point(228, 126);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(148, 26);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(152, 120);
+            this.textBox2.Location = new System.Drawing.Point(228, 185);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(148, 26);
             this.textBox2.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(115, 189);
+            this.button1.Location = new System.Drawing.Point(172, 291);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 43);
+            this.button1.Size = new System.Drawing.Size(246, 66);
             this.button1.TabIndex = 4;
-            this.button1.Text = "ACEPTAR";
+            this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(149, 35);
+            this.label3.Location = new System.Drawing.Point(224, 54);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.Size = new System.Drawing.Size(133, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Clase 2021 03 30";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 323);
+            this.ClientSize = new System.Drawing.Size(681, 497);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Login_Load);
