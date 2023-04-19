@@ -53,7 +53,7 @@ namespace ProyectodeAula2021.Clases
             }
         }
 
-        public void Busqueda_ABB_Mobin(Nodo reco , int info)
+        /*public void Busqueda_ABB_Mobin(Nodo reco , int info)
         {
         }
 
@@ -83,7 +83,7 @@ namespace ProyectodeAula2021.Clases
 
         public void Busqueda_ABB_Nelson(Nodo reco, int info)
         {
-        }
+        }*/
         /*
         El método ImprimirPre(), es decir el no recursivo se encarga de llamar al método recursivo pasando la dirección del nodo raiz.
         El método recursivo void ImprimirPre (Nodo reco) lo primero que verifica con un if si reco está apuntando a un nodo (esto es verdad si reco es distinto a null), en caso afirmativo ingresa al bloque del if y realiza:

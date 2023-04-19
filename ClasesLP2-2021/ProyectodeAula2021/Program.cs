@@ -15,8 +15,19 @@ namespace ProyectodeAula2021
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            Cola colaprueba = new Cola();
+            Pila pilaprueba = new Pila();
+            colaprueba.inserta_cola(111);
+            colaprueba.inserta_cola(222);
+            colaprueba.inserta_cola(333);
+            colaprueba.eliminar_cola();
+            colaprueba.imprimir_cola();
+            //pilaprueba.Push(15);
+            //pilaprueba.Push(30);
+            //pilaprueba.Push(100);
+            //Console.WriteLine(pilaprueba[1].ToString());
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
 
             //Console.WriteLine("Hola Mundo");
@@ -29,7 +40,7 @@ namespace ProyectodeAula2021
             //Console.WriteLine(person2);
 
 
-            Lista objetoLista = new Lista();
+            //Lista objetoLista = new Lista();
             /*
             objetoLista.setAtributos("Mauro", "Gimenez");
 
@@ -43,10 +54,10 @@ namespace ProyectodeAula2021
             Console.WriteLine("La matricula de Mauro es: " + objetoLista.matricula); //uso del get
             */
             //ImprimirLista();
-            ImprimirABB();
+            //ImprimirABB();
         }
 
-        static void ImprimirLista()
+        /*static void ImprimirLista()
         {
             string profe = "Andrea";
             List<string> listaAlumnos = new List<string>();
@@ -70,9 +81,9 @@ namespace ProyectodeAula2021
 
             Console.WriteLine("Cantidad de elementos en la lista =" + listaAlumnos.Count().ToString());
 
-        }
+        }*/
 
-        static void ImprimirABB()
+        /*static void ImprimirABB()
         {
             ArbolBinarioOrdenado abo = new ArbolBinarioOrdenado ();
             abo.Insertar (120);
@@ -87,6 +98,6 @@ namespace ProyectodeAula2021
             abo.ImprimirEntre ();
             Console.WriteLine ("Impresion postorden: ");
             abo.ImprimirPost ();
-        }
+        }*/
     }
 }
